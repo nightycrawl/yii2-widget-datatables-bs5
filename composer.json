@@ -1,5 +1,6 @@
 {
   "name": "reine/yii2-widget-datatables",
+  "version": "0.1.0",
   "description": "DataTables widget for Yii2 with Bootstrap 4",
   "type": "yii2-extension",
   "minimum-stability": "stable",
