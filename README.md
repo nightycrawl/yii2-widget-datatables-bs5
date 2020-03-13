@@ -2,23 +2,23 @@ DataTables widget for Yii2
 ===========================
 This extension provides the [DataTables](https://github.com/DataTables/DataTables) integration for the Yii2 framework.
 
-[![Latest Stable Version](https://poser.pugx.org/paskuale75/yii2-widget-datatables/v/stable)](https://packagist.org/packages/paskuale75/yii2-widget-datatables) [![Total Downloads](https://poser.pugx.org/paskuale75/yii2-widget-datatables/downloads)](https://packagist.org/packages/paskuale75/yii2-widget-datatables) [![Latest Unstable Version](https://poser.pugx.org/paskuale75/yii2-widget-datatables/v/unstable)](https://packagist.org/packages/paskuale75/yii2-widget-datatables) [![License](https://poser.pugx.org/paskuale75/yii2-widget-datatables/license)](https://packagist.org/packages/paskuale75/yii2-widget-datatables)
+[![Latest Stable Version](https://poser.pugx.org/reine/yii2-widget-datatables/v/stable)](https://packagist.org/packages/reine/yii2-widget-datatables) [![Total Downloads](https://poser.pugx.org/reine/yii2-widget-datatables/downloads)](https://packagist.org/packages/reine/yii2-widget-datatables) [![Latest Unstable Version](https://poser.pugx.org/reine/yii2-widget-datatables/v/unstable)](https://packagist.org/packages/reine/yii2-widget-datatables) [![License](https://poser.pugx.org/reine/yii2-widget-datatables/license)](https://packagist.org/packages/reine/yii2-widget-datatables)
 
 Installation
 ------------
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-With Composer installed, you can then install the extension using the following commands:
+Either run
 
-    composer require --prefer-dist paskuale75/yii2-widget-datatables "*"
+```bash
+composer require --prefer-dist reine/yii2-widget-datatables "*"
+```
 
-Command installs the datatables widget.
-
-You can also add (instead of the second command):
+or add
 
 ```
-"paskuale75/yii2-widget-datatables": "*"
+"reine/yii2-widget-datatables": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,7 +28,7 @@ Usage
 Use DataTables as any other other Yii2 widget.
 
 ```php
-use paskuale75\datatables\DataTables;
+use reine\datatables\DataTables;
 ```
 
 ```php
@@ -48,7 +48,7 @@ use paskuale75\datatables\DataTables;
     ],
 ]);?>
 ```
-This extension uses the Bootstrap integration plugin to provide a Yii2 style by default.
+This extension uses the Bootstrap 4 integration plugin to provide a Yii2 style by default.
 
 The TableTools plugin is also available. Specify the DOM and the tableTools settings in the clientOptions array as the following example.
 
@@ -72,7 +72,7 @@ You can also use DataTables in the JavaScript layer of your application. To achi
 ```php
 public $depends = [
 ...
-'paskuale75\datatables\DataTablesAsset',
+'reine\datatables\DataTablesAsset',
 ...
 ];
 ```

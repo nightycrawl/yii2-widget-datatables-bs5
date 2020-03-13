@@ -1,5 +1,5 @@
 {
-  "name": "paskuale75/yii2-widget-datatables",
+  "name": "reine/yii2-widget-datatables",
   "description": "DataTables widget for Yii2 with Bootstrap 4",
   "type": "yii2-extension",
   "minimum-stability": "stable",
@@ -15,8 +15,7 @@
   ],
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/paskuale75/yii2-widget-datatables/issues?state=open",
-    "source": "https://github.com/paskuale75/yii2-widget-datatables"
+    "source": "https://github.com/reine/yii2-widget-datatables"
   },
   "authors": [
     {
@@ -30,6 +29,10 @@
     {
       "name": "Pasquale Pellicani",
       "email": "pellicanipasquale@gmail.com"
+    },
+    {
+      "name": "Reina Sison",
+      "email": "reawakened.phoenix@gmail.com"
     }
   ],
   "repositories": [
@@ -41,16 +44,16 @@
   "require": {
     "yiisoft/yii2": "*",
     "bower-asset/jquery": ">= 1.7.0",
-    "bower-asset/datatables.net": "*",
-    "bower-asset/datatables.net-bs4": "dev-master",
-    "bower-asset/datatables.net-select-bs4": "*",
-    "bower-asset/datatables.net-buttons-bs4": "*",
+    "bower-asset/datatables.net": "^1.10.20",
+    "bower-asset/datatables.net-bs4": "^1.10.20",
+    "bower-asset/datatables.net-select-bs4": "^1.3.1",
+    "bower-asset/datatables.net-buttons-bs4": "^1.6.1",
     "bower-asset/jszip": "*",
     "bower-asset/pdfmake": "*"
   },
   "autoload": {
     "psr-4": {
-      "paskuale75\\datatables\\": ""
+      "reine\\datatables\\": ""
     }
   },
   "config": {
