@@ -63,7 +63,14 @@ use reine\datatables\DataTables;
                 "responsive" => true, 
                 "dom" => 'lBfTrtip',
                 "tableTools" => [],
-                'buttons' => ['copy', 'excel', 'pdf'],
+                'buttons' => [
+                    [
+                        'extend' => 'copy',
+                        'text'   => 'Copy to Clipboard'
+                    ],
+                    'excel',
+                    'pdf'
+                ],
             ],
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
