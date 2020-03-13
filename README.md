@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-composer require --prefer-dist reine/yii2-widget-datatables "*"
+composer require --prefer-dist reine/yii2-widget-datatables "^0.1.1"
 ```
 
 or add
 
 ```
-"reine/yii2-widget-datatables": "*"
+"reine/yii2-widget-datatables": "^0.1.1"
 ```
 
 to the require section of your `composer.json` file.
