@@ -28,25 +28,54 @@ Usage
 Use DataTables as any other other Yii2 widget.
 
 ```php
-use reine\datatables\DataTables;
-```
+# In controller, prepare data that will be passed to the view:
 
-```php
+    public function actionIndex()
+    {
+        $searchModel = new ModelSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $this->_pageSize);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+# In view:
+
 <?php
-    $searchModel = new ModelSearch();
-    $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+use reine\datatables\DataTables;
 ?>
-<?= DataTables::widget([
-    'dataProvider' => $dataProvider,
-    'filterModel' => $searchModel,
-    'columns' => [
-        ['class' => 'yii\grid\SerialColumn'],
+    <div class="row">
+        <div class="col-12">
 
-        //columns
+        <?= DataTables::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            // Optional (only if you want to override the defaults)
+            'tableOptions' => [
+                'class' => 'table card-table table-vcenter text-nowrap datatable',
+            ],
+            // Optional (only if you want to override the defaults)
+            'clientOptions' => [
+                "lengthMenu" => [[10,20,50,-1], [10,20,50,Yii::t('app',"All")]],
+                "info" => true,
+                "responsive" => true, 
+                "dom" => 'lBfTrtip',
+                "tableTools" => [],
+                'buttons' => ['copy', 'excel', 'pdf'],
+            ],
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
 
-        ['class' => 'yii\grid\ActionColumn'],
-    ],
-]);?>
+                //columns
+
+                ['class' => 'yii\grid\ActionColumn'],
+            ],
+        ]);?>
+
+        </div>
+    </div>
 ```
 This extension uses the Bootstrap 4 integration plugin to provide a Yii2 style by default.
 
@@ -67,7 +96,7 @@ The TableTools plugin is also available. Specify the DOM and the tableTools sett
 ...
 ```
 
-You can also use DataTables in the JavaScript layer of your application. To achieve this, you need to include DataTables as a dependency of your Asset file. In this case, you could use yii\grid\GridView or using the datatables options retrieve => true to avoid errors. In both case all options must be in the Javascript object.
+You can also use DataTables in the JavaScript layer of your application. To achieve this, you need to include DataTables as a dependency of your Asset file. In this case, you could use `yii\grid\GridView` or using the datatables options `retrieve => true` to avoid errors. In both case all options must be in the Javascript object.
 
 ```php
 public $depends = [
