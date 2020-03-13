@@ -6,7 +6,7 @@
  * @package yii2-widget-datatables
  */
 
-namespace paskuale75\datatables;
+namespace reine\datatables;
 
 use yii\web\AssetBundle;
 

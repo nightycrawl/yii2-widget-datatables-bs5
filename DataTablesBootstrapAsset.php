@@ -6,7 +6,7 @@
  * @package yii2-widget-datatables
  */
 
-namespace paskuale75\datatables;
+namespace reine\datatables;
 
 use yii\web\AssetBundle;
 
@@ -28,6 +28,6 @@ class DataTablesBootstrapAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'paskuale75\datatables\DataTablesAsset'
+        'reine\datatables\DataTablesAsset'
     ];
 }

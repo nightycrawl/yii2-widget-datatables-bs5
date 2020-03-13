@@ -1,6 +1,6 @@
 <?php
 
-namespace paskuale75\datatables;
+namespace reine\datatables;
 
 use yii\web\AssetBundle;
 
@@ -21,7 +21,7 @@ class DataTablesButtonsBs4Asset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'paskuale75\datatables\DataTablesAsset',
-        'paskuale75\datatables\DataTablesButtonsAsset'
+        'reine\datatables\DataTablesAsset',
+        'reine\datatables\DataTablesButtonsAsset'
     ];
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace paskuale75\datatables;
+namespace reine\datatables;
 
 use yii\web\AssetBundle;
 
@@ -19,6 +19,6 @@ class DataTablesPdfMakerAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'paskuale75\datatables\DataTablesAsset',
+        'reine\datatables\DataTablesAsset',
     ];
 }
