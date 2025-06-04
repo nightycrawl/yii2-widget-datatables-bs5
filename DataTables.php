@@ -6,7 +6,7 @@
  * @package yii2-widget-datatables
  */
 
-namespace reine\datatables;
+namespace nightycrawl\datatables;
 
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
@@ -48,14 +48,15 @@ class DataTables extends \yii\grid\GridView
         $view = $this->getView();
         $id = $this->tableOptions['id'];
 
-        //Bootstrap4 Asset by default
+        //Bootstrap5 Asset by default
         DataTablesBootstrapAsset::register($view);
 
         //TableTools Asset if needed
         if (isset($clientOptions["tableTools"])) {
-            DataTablesButtonsBs4Asset::register($view);
-            DataTablesSelectBs4Asset::register($view);
+            DataTablesButtonsBs5Asset::register($view);
+            DataTablesSelectBs5Asset::register($view);
         }
+
         $options = Json::encode($clientOptions);
         $view->registerJs("jQuery('#$id').DataTable($options);");
 

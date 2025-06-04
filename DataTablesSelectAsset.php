@@ -1,6 +1,6 @@
 <?php
 
-namespace reine\datatables;
+namespace nightycrawl\datatables;
 
 use yii\web\AssetBundle;
 
@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  */
 class DataTablesSelectAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/datatables.net-select';
+    public $sourcePath = '@npm/datatables.net-select';
 
     public $js = [
         "js/dataTables.select.min.js",
@@ -17,6 +17,6 @@ class DataTablesSelectAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'reine\datatables\DataTablesAsset',
+        'nightycrawl\datatables\DataTablesAsset',
     ];
 }

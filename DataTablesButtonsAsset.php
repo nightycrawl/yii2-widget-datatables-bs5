@@ -1,6 +1,6 @@
 <?php
 
-namespace reine\datatables;
+namespace nightycrawl\datatables;
 
 use yii\web\AssetBundle;
 
@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  */
 class DataTablesButtonsAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/datatables.net-buttons';
+    public $sourcePath = '@npm/datatables.net-buttons';
 
     public $js = [
         "js/dataTables.buttons.min.js",
@@ -22,8 +22,8 @@ class DataTablesButtonsAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'reine\datatables\DataTablesAsset',
-        'reine\datatables\DataTablesPdfMakerAsset',
-        'reine\datatables\DataTablesJsZipAsset'
+        'nightycrawl\datatables\DataTablesAsset',
+        'nightycrawl\datatables\DataTablesPdfMakerAsset',
+        'nightycrawl\datatables\DataTablesJsZipAsset'
     ];
 }

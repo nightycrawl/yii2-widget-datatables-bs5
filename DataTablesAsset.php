@@ -6,7 +6,7 @@
  * @package yii2-widget-datatables
  */
 
-namespace reine\datatables;
+namespace nightycrawl\datatables;
 
 use yii\web\AssetBundle;
 
@@ -19,7 +19,7 @@ class DataTablesAsset extends AssetBundle
     public $sourcePath = '@bower/datatables.net';
 
     public $js = [
-        "js/jquery.dataTables.min.js",
+        "js/dataTables.min.js",
     ];
 
     public $depends = [

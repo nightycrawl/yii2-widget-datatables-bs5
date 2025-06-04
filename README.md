@@ -2,7 +2,7 @@ DataTables widget for Yii2
 ===========================
 This extension provides the [DataTables](https://github.com/DataTables/DataTables) integration for the Yii2 framework.
 
-[![Latest Stable Version](https://poser.pugx.org/reine/yii2-widget-datatables/v/stable)](https://packagist.org/packages/reine/yii2-widget-datatables) [![Total Downloads](https://poser.pugx.org/reine/yii2-widget-datatables/downloads)](https://packagist.org/packages/reine/yii2-widget-datatables) [![Latest Unstable Version](https://poser.pugx.org/reine/yii2-widget-datatables/v/unstable)](https://packagist.org/packages/reine/yii2-widget-datatables) [![License](https://poser.pugx.org/reine/yii2-widget-datatables/license)](https://packagist.org/packages/reine/yii2-widget-datatables)
+[![Latest Stable Version](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/v/stable)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![Total Downloads](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/downloads)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![Latest Unstable Version](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/v/unstable)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![License](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/license)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5)
 
 Installation
 ------------
@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-composer require --prefer-dist reine/yii2-widget-datatables "^0.1.1"
+composer require --prefer-dist nightycrawl/yii2-widget-datatables-bs5 "^1.0"
 ```
 
 or add
 
 ```
-"reine/yii2-widget-datatables": "^0.1.1"
+"nightycrawl/yii2-widget-datatables-bs5": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -108,7 +108,7 @@ You can also use DataTables in the JavaScript layer of your application. To achi
 ```php
 public $depends = [
 ...
-'reine\datatables\DataTablesAsset',
+'nightycrawl\datatables\DataTablesAsset',
 ...
 ];
 ```

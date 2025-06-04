@@ -1,6 +1,6 @@
 <?php
 
-namespace reine\datatables;
+namespace nightycrawl\datatables;
 
 use yii\web\AssetBundle;
 
@@ -18,6 +18,6 @@ class DataTablesJsZipAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
-        'reine\datatables\DataTablesAsset',
+        'nightycrawl\datatables\DataTablesAsset',
     ];
 }
