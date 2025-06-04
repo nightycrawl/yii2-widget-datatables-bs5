@@ -2,7 +2,6 @@ DataTables widget for Yii2
 ===========================
 This extension provides the [DataTables](https://github.com/DataTables/DataTables) integration for the Yii2 framework.
 
-[![Latest Stable Version](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/v/stable)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![Total Downloads](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/downloads)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![Latest Unstable Version](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/v/unstable)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5) [![License](https://poser.pugx.org/nightycrawl/yii2-widget-datatables-bs5/license)](https://packagist.org/packages/nightycrawl/yii2-widget-datatables-bs5)
 
 Installation
 ------------
