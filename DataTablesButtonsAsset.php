@@ -13,7 +13,6 @@ class DataTablesButtonsAsset extends AssetBundle
 
     public $js = [
         "js/dataTables.buttons.min.js",
-        "js/buttons.flash.min.js",
         "js/buttons.print.min.js",
         "js/buttons.html5.min.js",
         "js/buttons.colVis.min.js",
