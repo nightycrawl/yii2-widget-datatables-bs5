@@ -1,6 +1,6 @@
 {
   "name": "nightycrawl/yii2-widget-datatables-bs5",
-  "version": "1.0",
+  "version": "1.1",
   "description": "DataTables widget for Yii2 with Bootstrap 5",
   "type": "yii2-extension",
   "minimum-stability": "stable",
